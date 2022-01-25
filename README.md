@@ -40,7 +40,11 @@ pkgs.mkShell {
     pkgs.python39Packages.ipykernel
     pkgs.python39Packages.pyspark
     pkgs.python39Packages.pandas
+    pkgs.python39Packages.ipython
+    pkgs.spark
   ];
+  SPARK_HOME = "${pkgs.spark}/lib/spark-3.1.2";
+  PYSPARK_DRIVER_PYTHON = "ipython";
   shellHook = ''
     echo Welcome to your Bootcamp Lab 
   '';
@@ -48,6 +52,7 @@ pkgs.mkShell {
 ```
 
 - Enter shell by typing `nix-shell` in the project's root directory.
+- Test pyspark with `PYSPARK_DRIVER_PYTHON=ipython pyspark`
 - Implement the Spark word count example.
 - Commit your changes to your fork of this repository and push them. 
 - For a Python refresher please consult https://learnxinyminutes.com/docs/python/.
