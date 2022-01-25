@@ -1,25 +1,32 @@
 # Bootcamp lab
 
-## Windows Subsystem for Linux
+## Install Windows Subsystem for Linux
+WSL gives you a Linux environment from inside Windows.
 - https://docs.microsoft.com/en-us/windows/wsl/install
 
-## Git
+## Install Git
+Git is a distributed version control system to track changes to program files in 
+personal or collaborative projects.
+
 - `sudo apt install git`
 
-## Github
+## Get started with Github
+Github provides git repository hosting. Please *do not* use github for work related repositories
+unless it's for non-confidential demos, testing or offically approved project repositories.
+
 - Fork https://github.com/hcvst/bootcamp-lab
 - Clone your fork
 
-## Nix
-Install the nix package manager from https://nixos.org/.
+## Install Nix
+Install the nix package manager that is part of the NixOs project - https://nixos.org/.
 
 - `sh <(curl -L https://nixos.org/nix/install) --no-daemon`
 
-## Visual Studio Code
+## Install Visual Studio Code
 Setup VS Code as per https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
 
-## Spark
-- Configure a nix shell for spark development by placing shell.nix with \
+## Hello Spark
+- Configure a nix shell for spark development by placing the file `shell.nix` with \
 the following contents in your project's root directory.
 
 ```
@@ -40,8 +47,7 @@ pkgs.mkShell {
 }
 ```
 
-
-- Enter shell with `nix-shell`
-- Write word count example
-- Commit your changes and push them to your github account
-- For a Python refresher consult https://learnxinyminutes.com/docs/python/.
+- Enter shell by typing `nix-shell` in the project's root directory.
+- Implement the Spark word count example.
+- Commit your changes to your fork of this repository and push them. 
+- For a Python refresher please consult https://learnxinyminutes.com/docs/python/.
