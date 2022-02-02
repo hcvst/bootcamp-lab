@@ -52,7 +52,8 @@ pkgs.mkShell {
 ```
 
 - Enter shell by typing `nix-shell` in the project's root directory.
-- Test pyspark with `PYSPARK_DRIVER_PYTHON=ipython pyspark`
+- Test pyspark with `pyspark`
 - Implement the Spark word count example.
 - Commit your changes to your fork of this repository and push them. 
 - For a Python refresher please consult https://learnxinyminutes.com/docs/python/.
+
